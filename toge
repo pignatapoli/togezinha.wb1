@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina de login</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+    <div class="login-form w3-container w3-card-4 w3-display-middle">
+
+        <header class="w3-container w3-center">
+            <h1>login</h1>
+        </header>
+
+        <div class="w3-container">
+            <form action="">
+                <input class="w3-input w3-border w3-round" type="email" name="email" id="email" placeholder="E-mail">
+                <input class="w3-input w3-border w3-round w3-margin-top" type="password" name="senha" id="senha"
+                    placeholder="Senha">
+                <button class="w3-button w3-block w3-gray w3-margin-top" type="submit">Entrar</button>
+                <button class="w3-button w3-block w3-gray w3-margin-top" type="button"
+                    onclick="document.getElementById('id01').style.display='block'">cadastrar</button>
+
+            </form>
+        </div>
+        <p class="w3-center">
+            <a href="">esqueci minha senha</a>
+        </p>
+    </div>
+
+    <div id="id01" class="w3-modal">
+        <div class="w3-modal-content">
+
+            <header class="w3-container w3-gray">
+                <span onclick="document.getElementById('id01').style.display='none'"
+                    class="w3-button w3-display-topright">&times;</span>
+                <h2>cadastro de usuario</h2>
+            </header>
+
+            <div class="w3-container">
+                <form action="">
+                    <label class="w3-text-black" for="nome"><b>Nome</b></label>
+                    <input class="text" name="nome" id="nome">
+                    <label class="w3-input w3-border" for="CPF"><b>CPF</b></label>
+                    <input type="text" name="CPF" id="CPF">
+                    <label class="w3-input w3-border" for="Email"><b>E-mail</b></label>
+                    <input type="Email" name="E-mail" id="E-mail">
+                    <label class="w3-input w3-border" for="senha"><b>senha</b></label>
+                    <input type="password" name="senha" id="senha">
+                </form>
+            </div>
+
+            <footer class="w3-container w3-gray w3-padding-16">
+                <div class="w3-center">
+                    <div class="w3-bar">
+                        <button class="w3-button w3-black">Salvar</button>
+                        <button class="w3-button w3-gray"><span onclick="document.getElementById('id01').style.display='none'"></span>
+                            <button class="w3-button w3-gray">cancelar</button>
+                    </div>
+                </div>
+            </footer>
+
+        </div>
+    </div>
+</body>
+
+</html>
